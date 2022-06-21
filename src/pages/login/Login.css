@@ -8,6 +8,7 @@
     font-weight: 300;
     color: var(--logo-color);
     text-align: left;
+    padding-bottom: 5%;
 }
 
 input[type=text] {
