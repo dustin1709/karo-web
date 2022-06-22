@@ -14,4 +14,31 @@ code {
 
 html {
   --logo-color: #B6020F;
+  --login-form-bg: hsl(0 0% 100% / 0.92);
+  --fweight: 600;
+  --placeholdercolor: rgb(24, 23, 23);
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: var(--placeholdercolor);
+  font-weight: var(--fweight);
+}
+
+:-moz-placeholder { /* Firefox */
+  color: var(--placeholdercolor);
+  font-weight: var(--fweight);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--placeholdercolor);
+  font-weight: var(--fweight);
+}
+
+:-ms-input-placeholder {  
+  color: var(--placeholdercolor);
+  font-weight: var(--fweight);
 }
