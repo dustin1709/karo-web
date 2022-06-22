@@ -15,7 +15,7 @@ const Login = () => {
                     </div>
                     <input type="text" id="uname" name="uname" 
                         placeholder="Tài khoản" required />
-                    <input type="text" id="password" name="password"
+                    <input type="password" id="password" name="password"
                         placeholder="Mật khẩu" required />
 
                     <div id="register-link" style={{clear: 'both', width: '100%'}} >
