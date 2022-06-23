@@ -12,11 +12,14 @@ code {
     monospace;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 html {
   --logo-color: #B6020F;
   --login-form-bg: hsl(0 0% 100% / 0.92);
   --fweight: 600;
   --placeholdercolor: rgb(24, 23, 23);
+  --font-family-main: 'Open Sans', sans-serif;
 }
 
 button {
@@ -26,19 +29,23 @@ button {
 ::-webkit-input-placeholder {
   color: var(--placeholdercolor);
   font-weight: var(--fweight);
+  font-family: var(--font-family-main);
 }
 
 :-moz-placeholder { /* Firefox */
   color: var(--placeholdercolor);
   font-weight: var(--fweight);
+  font-family: var(--font-family-main);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
   color: var(--placeholdercolor);
   font-weight: var(--fweight);
+  font-family: var(--font-family-main);
 }
 
 :-ms-input-placeholder {  
   color: var(--placeholdercolor);
   font-weight: var(--fweight);
+  font-family: var(--font-family-main);
 }

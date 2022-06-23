@@ -1,5 +1,5 @@
 #login-form {
-    margin-left: 3%;
+    margin-left: 6%;
     width: 30%;
     padding: 2%;
     background: var(--login-form-bg);
@@ -88,8 +88,30 @@ input[type=text]:focus, input[type=password]:focus {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    padding-bottom: 8%;
-    padding-top: 3%;
+    padding-bottom: 15%;
+    padding-top: 10%;
+}
+
+#background-2 {
+    background-image: url("assets/house.jpg");
+    padding-top: 10%;
+    padding-bottom: 50%;
+    margin: 4.5% 4.5% 3.5% 6%;
+    border-radius: 80px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#background-3 {
+    color: var(--logo-color);
+    font-family: 'Open Sans', sans-serif;
+    margin: 10%;
+}
+
+#background-3 p {
+    font-size: 150%;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 820px) {
@@ -98,5 +120,6 @@ input[type=text]:focus, input[type=password]:focus {
         text-align: center;
         padding-left: 3%;
         padding-right: 5%;
+        margin-left: 5%;
     }
 }

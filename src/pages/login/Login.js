@@ -37,6 +37,26 @@ const Login = () => {
 
                 </form>
             </div>
+            <div style={{ 
+                backgroundColor: '#ebebeb', display: 'grid',
+                gridTemplateColumns: '50% 50%',
+                width: '100%'
+            }}>
+                <div id="background-2"></div>
+                <div id="background-3">
+                    <h2>Nền tảng kết nối các môi giới tự do</h2>
+                    <p>
+                        "Tạo ra một cơ sở dữ liệu chia sẻ chung, giúp môi giới nhanh chóng tìm thấy bất động sản phù hợp với khách hàng, 
+                        dễ dàng giới thiệu sản phẩm của mình đến các môi giới khác"
+                    </p>
+                </div>
+            </div>
+            <div style={{ backgroundColor: '#ebebeb',
+                display: 'grid', gridTemplateColumns: '30% 30% 30%', padding: '5%' }}>
+                <div id="wiget01"></div>
+                <div id="wiget02"></div>
+                <div id="wiget03"></div>
+            </div>
         </>
     );
 
