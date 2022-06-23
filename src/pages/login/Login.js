@@ -2,6 +2,10 @@ import React from "react";
 import { useNavigate, Navigate, Link, NavLink } from 'react-router-dom';
 import './Login.css';
 import * as FaIcons from 'react-icons/fa';
+import wiget01 from './assets/wiget-icon-1.png';
+import wiget02 from './assets/wiget-icon-2.png';
+import wiget03 from './assets/wiget-icon-3.png';
+import Footer from "../../components/Footer";
 
 const Login = () => {
     
@@ -37,11 +41,7 @@ const Login = () => {
 
                 </form>
             </div>
-            <div style={{ 
-                backgroundColor: '#ebebeb', display: 'grid',
-                gridTemplateColumns: '50% 50%',
-                width: '100%'
-            }}>
+            <div id="box-01">
                 <div id="background-2"></div>
                 <div id="background-3">
                     <h2>Nền tảng kết nối các môi giới tự do</h2>
@@ -51,12 +51,24 @@ const Login = () => {
                     </p>
                 </div>
             </div>
-            <div style={{ backgroundColor: '#ebebeb',
-                display: 'grid', gridTemplateColumns: '30% 30% 30%', padding: '5%' }}>
-                <div id="wiget01"></div>
-                <div id="wiget02"></div>
-                <div id="wiget03"></div>
+            <div id="wiget-box">
+                <div className="wiget">
+                    <img src={wiget01} />
+                    <h3>GIẢI PHÁP BÁN HÀNG TỐI ƯU</h3>
+                    <p>Giảm chi phí tìm kiếm (searching cost). Xác định giá bán của bất động sản (price discovery)</p>
+                </div>
+                <div className="wiget">
+                    <img src={wiget02} />
+                    <h3>NỀN TẢNG KẾT NỐI MÔI GIỚI VỚI MÔI GIỚI</h3>
+                    <p>Ngoài ra cung cấp các công cụ giúp môi giới có thể nâng cao được hiệu suất giao dịch</p>
+                </div>
+                <div className="wiget">
+                    <img src={wiget03} />
+                    <h3>THIẾT LẬP CÔNG CỤ QUẢN LÝ DEAL CRM CHO MÔI GIỚI</h3>
+                    <p>Hỗ trợ công cụ giao dịch tiện ích, tư vấn pháp lý, định giá và thông hành tài chính</p>
+                </div>
             </div>
+            <Footer />
         </>
     );
 
