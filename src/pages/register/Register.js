@@ -1,8 +1,18 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
 const Register = () => {
+
+    const cities = ["Hà Nội", "TP Hồ Chí Minh", "Bình Dương", "Đà Nẵng", "Hải Phòng",
+                    "Long An", "Bà Rịa Vũng Tàu", "An Giang", "Bắc Giang", "Bắc Kạn",
+                    "Bạc Liêu", "Bắc Ninh", "Bến Tre", "Bình Định", "Bình Phước",
+                    "Bình Thuận", "Cà Mau", "Cần Thơ", "Cao Bằng", "Đắk Lắk", "Đắk Nông",
+                    "Điện Biên", "Đồng Nai", "Đồng Tháp", "Gia Lai", "Hà Giang", "Hà Nam",
+                    "Hà Tĩnh", "Hải Dương", "Hậu Giang", "Hoà Bình", "Hưng Yên", "Khánh Hoà",
+                    "Kiên Giang", "Kon Tum", "Lai Châu", "Lâm Đồng", "Lạng Sơn", "Lào Cai"
+                ];
+
     return (
         <>
             <div id="background" style={{paddingTop: '3em'}}>
@@ -21,36 +31,11 @@ const Register = () => {
                     <label style={{float: 'left', paddingTop: '2%'}}>Khu vực hoạt động</label>
                     <div style={{clear: 'both'}}></div>
                     <select style={{float: 'left', width: '50%'}}  className="form-select" aria-label=".form-select-lg example">
-                        <option value="1">Hà Nội</option>
-                        <option value="2">TP Hồ Chí Minh</option>
-                        <option value="3">Bình Dương</option>
-                        <option value="4">Đà Nẵng</option>
-                        <option value="5">Hải Phòng</option>
-                        <option value="6">Long An</option>
-                        <option value="7">Bà Rịa Vũng Tàu</option>
-                        <option value="8">An Giang</option>
-                        <option value="9">Bắc Giang</option>
-                        <option value="10">Bắc Kạn</option>
-                        <option value="11">Bạc Liêu</option>
-                        <option value="12">Bắc Ninh</option>
-                        <option value="13">Bến Tre</option>
-                        <option value="14">Bình Định</option>
-                        <option value="15">Bình Phước</option>
-                        <option value="16">Bình Thuận</option>
-                        <option value="17">Cà Mau</option>
-                        <option value="18">Cần Thơ</option>
-                        <option value="19">Cao Bằng</option>
-                        <option value="20">Đắk Lắk</option>
-                        <option value="21">Đắk Nông</option>
-                        <option value="22">Điện Biên</option>
-                        <option value="23">Đồng Nai</option>
-                        <option value="24">Đồng Tháp</option>
-                        <option value="25">Gia Lai</option>
-                        <option value="26">Hà Giang</option>
-                        <option value="27">Hà Nam</option>
-                        <option value="28">Hà Tĩnh</option>
-                        <option value="29">Hải Dương</option>
-                        <option value="30">Hậu Giang</option>
+                        {
+                            cities.map((city, index) => (
+                                <option value={index+1}>{city}</option>
+                            ))
+                        }
                     </select>
 
                     <select style={{float: 'right', width: '48%'}} className="form-select" aria-label=".form-select-lg example">
