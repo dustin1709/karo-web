@@ -4,7 +4,24 @@ import Footer from "../../components/Footer";
 
 const Register = () => {
 
-    const cities = ["Hà Nội", "TP Hồ Chí Minh", "Bình Dương", "Đà Nẵng", "Hải Phòng",
+    const cities = [
+        {
+            id: 1,
+            name:"Hà Nội",
+            dist: [
+                {id: 1, name: "Hoàn Kiếm"},
+                {id: 2, name: "Ba Đình"},
+                {id: 3, name: "Đống Đa"},
+                {id: 4, name: "Hai Bà Trưng"},
+                {id: 5, name: "Thanh Xuân"},
+                {id: 6, name: "Tây Hồ"},
+                {id: 7, name: "Cầu Giấy"},
+                {id: 8, name: "Hoàng Mai"},
+                {id: 9, name: "Long Biên"},
+                {id: 10, name: "Đông Anh"},
+                {id: 11, name: "Gia Lâm"}
+            ]
+        }, "TP Hồ Chí Minh", "Bình Dương", "Đà Nẵng", "Hải Phòng",
                     "Long An", "Bà Rịa Vũng Tàu", "An Giang", "Bắc Giang", "Bắc Kạn",
                     "Bạc Liêu", "Bắc Ninh", "Bến Tre", "Bình Định", "Bình Phước",
                     "Bình Thuận", "Cà Mau", "Cần Thơ", "Cao Bằng", "Đắk Lắk", "Đắk Nông",
