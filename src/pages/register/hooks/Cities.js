@@ -33,7 +33,7 @@ export default function Cities() {
             id: 5,
             name: "Hải Phòng",
             dist: [
-
+                "Đồ Sơn", "Dương Kinh", "Hải An", "Kiến An", "Lê Chân", "Ngô Quyền", "An Dương", "An Lão", "Bạch Long Vĩ", "Cát Hải", "Kiến Thụy", "Thủy Nguyên", "Tiên Lãng", "Vĩnh Bảo"
             ]
         },
         {

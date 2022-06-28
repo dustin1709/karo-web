@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+Karo - Web version
 
-To run "npm start", delete file "package-lock.json" and "npm install" again.
+When "npm start" to working, delete file "package-lock.json" and "npm install" again. Command "npm start" should be working after the new "package-lock.json" was replaced.
+
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
