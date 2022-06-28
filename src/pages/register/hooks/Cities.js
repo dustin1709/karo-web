@@ -287,6 +287,69 @@ export default function Cities() {
             dist: [
                 
             ]
+        },
+        {
+            id: 42,
+            name: "Ninh Bình",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 43,
+            name: "Ninh Thuận",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 44,
+            name: "Phú Thọ",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 45,
+            name: "Phú Yên",
+            dist: [
+                "Đông Hòa", "Đồng Xuân", "Phú Hòa", "Sơn Hòa", "Sông Cầu", "Sông Hinh", "Tây Hòa", "Tuy An", "Tuy Hòa"
+            ]
+        },
+        {
+            id: 46,
+            name: "Quảng Bình",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 47,
+            name: "Quảng Nam",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 48,
+            name: "Quảng Ngãi",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 49,
+            name: "Quảng Ninh",
+            dist: [
+                
+            ]
+        },
+        {
+            id: 50,
+            name: "Quảng Trị",
+            dist: [
+                
+            ]
         }
     ];
 }
