@@ -40,14 +40,14 @@ export default function Cities() {
             id: 6,
             name: "Long An",
             dist: [
-
+                "Bến Lức", "Cần Đước", "Cần Giuộc", "Châu Thành", "Đức Hòa", "Đức Huệ", "Mộc Hóa", "Tân Hưng", "Tân Thạnh", "Tân Trụ", "Thạnh Hóa", "Thủ Thừa", "Vĩnh Hưng", "Tân An", "Kiến Tường"
             ]
         }, 
         {
             id: 7,
             name: "Bà Rịa Vũng Tàu",
             dist: [
-
+                ""
             ]
         }, 
         {
@@ -320,7 +320,7 @@ export default function Cities() {
             id: 46,
             name: "Quảng Bình",
             dist: [
-                
+                "Bố Trạch", "Lệ Thủy", "Minh Hóa", "Quảng Ninh", "Quảng Trạch", "Tuyên Hóa", "Đồng Hới", "Ba Đồn"
             ]
         },
         {
