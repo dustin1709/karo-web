@@ -89,21 +89,21 @@ export default function Cities() {
             id: 13,
             name: "Bến Tre",
             dist: [
-
+                "Ba Tri", "Bình Đại", "Châu Thành", "Chợ Lách", "Giồng Trôm", "Thạch Phú", "Mỏ Cày Bắc", "Mỏ Cày Nam"
             ]
         }, 
         {
             id: 14,
             name: "Bình Định",
             dist: [
-
+                "An Lão", "An Nhơn", "Hoài Nhơn", "Hoài Ân", "Phù Cát", "Tây Sơn", "Tuy Phước", "Vân Canh", "Vĩnh Thạnh", "Quy Nhơn"
             ]
         }, 
         {
             id: 15,
             name: "Bình Phước",
             dist: [
-
+                "Đồng Xoài", "Bình Long", "Chơn Thành", "Hớn Quản", "Phước Long", "Bù Đốp", "Bù Đăng", "Bù Gia Mập", "Đồng Phú", "Lộc Ninh", "Phú Riềng"
             ]
         },
         {
