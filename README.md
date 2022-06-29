@@ -2,6 +2,9 @@ Karo - Web version
 
 When "npm start" to working, delete file "package-lock.json" and "npm install" again. Command "npm start" should be working after the new "package-lock.json" was replaced.
 
+To work with api, requires "cors". Install the following chrome extension will make testing easier:
+    https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?hl=en-US
+
 
 # Getting Started with Create React App
 

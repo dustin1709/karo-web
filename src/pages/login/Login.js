@@ -10,8 +10,6 @@ import axios from "axios";
 
 const Login = () => {
     const navigate = useNavigate();
-    
-    const url = "http://lab.karo.land/api/login";
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -19,19 +17,24 @@ const Login = () => {
 
     const login = async (e) => {
         e.preventDefault();
-        const account = {email: email, password: password};
-        const response = await axios.post(url, account);
-        if (!response.ok) throw Error("Did not receive expected data");
-        if(response.ok) {
-            const result = response.json();
-            console.log(result.error_code);
-            if (result.error_code === "00") {
+        var data = new FormData();
+        data.append('email', email);
+        data.append('password', password);
+        var config = {
+            method: 'post',
+            url: "http://lab.karo.land/api/login",
+            data : data
+        };
+        axios(config).then(function (response) {
+            const res = response.data;
+            if (res.error_code === "00") {
                 navigate("/home");
+            } else {
+                setErrSMS('Sai mật khẩu hoặc email. Vui lòng thử lại.');
             }
-            if (result.error_code === "01") {
-                setErrSMS("Sai mật khẩu hoặc email. Vui lòng nhập lại.");
-            }
-        }
+        }).catch(function (error) {
+            console.log(error);
+        });
     }
 
     return (
@@ -44,7 +47,7 @@ const Login = () => {
                     </div>
                     {errSMS ? (<p style={{color: "red"}}>{errSMS}</p>) : <></>}
                     <input type="text" id="uname" name="uname" 
-                        placeholder="Tài khoản" required 
+                        placeholder="Email" required 
                         onChange={(e) => setEmail(e.target.value)}/>
                     <input type="password" id="password" name="password"
                         placeholder="Mật khẩu" required
