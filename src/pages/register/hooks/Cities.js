@@ -47,42 +47,42 @@ export default function Cities() {
             id: 7,
             name: "Bà Rịa Vũng Tàu",
             dist: [
-                ""
+                "Châu Đức", "Côn Đảo", "Đất Đỏ", "Long Điền", "Xuyên Mộc", "Vũng Tàu", "Bà Rịa", "Phú Mỹ"
             ]
         }, 
         {
             id: 8,
             name: "An Giang",
             dist: [
-
+                "An Phú", "Châu Phú", "Châu Thành", "Chợ Mới", "Tri Tôn", "Phú Tân", "Tân Châu", "Thoại Sơn", "Trịnh Biên", "Long Xuyên", "Châu Đốc"
             ]
         }, 
         {
             id: 9,
             name: "Bắc Giang",
             dist: [
-
+                "Hiệp Hòa", "Lạng Giang", "Lục Nam", "Lục Ngạn", "Sơn Động", "Tân Yên", "Việt Yên", "Yên Dũng", "Yên Thế", "Bắc Giang"
             ]
         }, 
         {
             id: 10,
             name: "Bắc Kạn",
             dist: [
-
+                "Ba Bể", "Bạch Thông", "Chợ Đồn", "Chợ Mới", "Na Rì", "Ngân Sơn", "Pác Nặm", "Bắc Kạn"
             ]
         },
         {
             id: 11,
             name: "Bạc Liêu",
             dist: [
-
+                "Hồng Dân", "Phước Long", "Vĩnh Lợi", "Giá Rai", "Đông Hải", "Hòa Bình"
             ]
         }, 
         {
             id: 12,
             name: "Bắc Ninh",
             dist: [
-
+                "Gia Bình", "Lương Tài", "Quế Võ", "Thuận Thành", "Tiên Du", "Từ Sơn", "Yên Phong"
             ]
         }, 
         {

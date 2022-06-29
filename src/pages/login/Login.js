@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, Navigate, Link, NavLink } from 'react-router-dom';
 import './Login.css';
 import * as FaIcons from 'react-icons/fa';
@@ -6,21 +6,49 @@ import wiget01 from './assets/wiget-icon-1.png';
 import wiget02 from './assets/wiget-icon-2.png';
 import wiget03 from './assets/wiget-icon-3.png';
 import Footer from "../../components/Footer";
+import axios from "axios";
 
 const Login = () => {
+    const navigate = useNavigate();
     
+    const url = "http://lab.karo.land/api/login";
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [ errSMS, setErrSMS ] = useState("");
+
+    const login = async (e) => {
+        e.preventDefault();
+        const account = {email: email, password: password};
+        const response = await axios.post(url, account);
+        if (!response.ok) throw Error("Did not receive expected data");
+        if(response.ok) {
+            const result = response.json();
+            console.log(result.error_code);
+            if (result.error_code === "00") {
+                navigate("/home");
+            }
+            if (result.error_code === "01") {
+                setErrSMS("Sai mật khẩu hoặc email. Vui lòng nhập lại.");
+            }
+        }
+    }
+
     return (
         <>
             <div id="background">
-                <form id="login-form">
+                <form id="login-form" onSubmit={login}>
                     <div id="title">
                         <img src={'/logo_karo.png'} />
                         <h1 id="h1-login">Karo.land</h1>
                     </div>
+                    {errSMS ? (<p style={{color: "red"}}>{errSMS}</p>) : <></>}
                     <input type="text" id="uname" name="uname" 
-                        placeholder="Tài khoản" required />
+                        placeholder="Tài khoản" required 
+                        onChange={(e) => setEmail(e.target.value)}/>
                     <input type="password" id="password" name="password"
-                        placeholder="Mật khẩu" required />
+                        placeholder="Mật khẩu" required
+                        onChange={(e) => setPassword(e.target.value)} />
 
                     <div id="register-link" style={{clear: 'both', width: '100%'}} >
                         <Link to="/register">Đăng ký tài khoản mới</Link>
