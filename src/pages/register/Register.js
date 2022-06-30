@@ -41,8 +41,8 @@ const Register = () => {
         data.append('phone_register', phone);
         if (password === password2 && password.length === 8) {
             console.log("password matched");
-            data.append('password', password);
-            data.append('password_register', password2);
+            data.append('password_register', password);
+            data.append('confirm_password_register', password2);
             data.append('city', city);
             data.append('district', dist);
             console.log(data);
