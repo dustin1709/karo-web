@@ -45,7 +45,7 @@ const Login = () => {
                         <img src={'/logo_karo.png'} />
                         <h1 id="h1-login">Karo.land</h1>
                     </div>
-                    {errSMS ? (<p style={{color: "red"}}>{errSMS}</p>) : <></>}
+                    {errSMS ? (<p style={{color: "red", clear: "both", float: "left"}}>{errSMS}</p>) : <></>}
                     <input type="text" id="uname" name="uname" 
                         placeholder="Email" required 
                         onChange={(e) => setEmail(e.target.value)}/>
