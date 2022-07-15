@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <Nav />
-            <div></div>
+            <div style={{backgroundColor: '#f0f0f0', padding: '1%'}}></div>
         </>
     );
 }
