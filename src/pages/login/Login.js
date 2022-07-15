@@ -7,6 +7,8 @@ import wiget02 from './assets/wiget-icon-2.png';
 import wiget03 from './assets/wiget-icon-3.png';
 import Footer from "../../components/Footer";
 import axios from "axios";
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+import { GoogleLogin } from 'react-google-login';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -37,6 +39,15 @@ const Login = () => {
         });
     }
 
+    const responseGoogle = (response) => {
+        console.log(response);
+    }
+
+    const responseFacebook = (response) => {
+        console.log(response);
+    }
+
+
     return (
         <>
             <div id="background">
@@ -66,8 +77,25 @@ const Login = () => {
                     </div>
 
                     <div id="external-login">
-                        <button className="external-btn"><FaIcons.FaGoogle />&nbsp;&nbsp;Google</button>
-                        <button className="external-btn"><FaIcons.FaFacebook />&nbsp;&nbsp;Facebook</button>
+                        <GoogleLogin className="external-btn"
+                            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                            buttonText="Đăng nhập với Google"
+                            onSuccess={responseGoogle}
+                            onFailure={responseGoogle}
+                            cookiePolicy={'single_host_origin'}
+                            render={renderProps => (
+                                <button className="external-btn" onClick={renderProps.onClick}><FaIcons.FaGoogle /> Google</button>
+                            )}
+                        />
+                        <FacebookLogin
+                            appId="1088597931155576"
+                            fields="name,email,picture"
+                            autoLoad={true}
+                            callback={responseFacebook}
+                            render={renderProps => (
+                                <button className="external-btn" onClick={renderProps.onClick}><FaIcons.FaFacebook /> Facebook</button>
+                            )}
+                        />
                     </div>
 
                 </form>
