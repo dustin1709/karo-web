@@ -8,7 +8,7 @@ const Nav = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a id="title" className="navbar-brand"><img src={'/logo_karo.png'}/></a>
+          <a className="navbar-brand"><img style={{height: '1.8em'}} src={'/logo_karo.png'}/></a>
           <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success" type="submit">Search</button>
@@ -21,35 +21,35 @@ const Nav = () => {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
                   <span><FaIcons.FaHome /></span>
-                  <div style={{clear: 'both', padding: '1%'}}></div>
+                  <div style={{clear: 'both', padding: '0.25%'}}></div>
                   <span>Trang chủ</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   <span><FaIcons.FaDollarSign /></span>
-                  <div style={{clear: 'both', padding: '1%'}}></div>
+                  <div style={{clear: 'both', padding: '0.25%'}}></div>
                   <span>Định giá</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   <span><FaIcons.FaStoreAlt /></span>
-                  <div style={{clear: 'both', padding: '1%'}}></div>
+                  <div style={{clear: 'both', padding: '0.25%'}}></div>
                   <span>Kho nhà</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   <span><FaIcons.FaRegListAlt /></span>
-                  <div style={{clear: 'both', padding: '1%'}}></div>
+                  <div style={{clear: 'both', padding: '0.25%'}}></div>
                   <span>Quản Lý</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   <span><FaIcons.FaBell /></span>
-                  <div style={{clear: 'both', padding: '1%'}}></div>
+                  <div style={{clear: 'both', padding: '0.25%'}}></div>
                   <span>Thông báo</span>
                 </Link>
               </li>
