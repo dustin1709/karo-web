@@ -77,7 +77,7 @@ const Login = () => {
                     </div>
 
                     <div id="external-login">
-                        <GoogleLogin className="external-btn"
+                        <GoogleLogin
                             clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
                             buttonText="Đăng nhập với Google"
                             onSuccess={responseGoogle}
