@@ -1,17 +1,5 @@
 .nav-link {
-    color: var(--logo-color);
     padding-right: 0.5em;
-}
-
-.btn {
-    color: var(--logo-color); 
-    border-color: var(--logo-color);
-}
-
-.btn-outline-success:hover {
-    background-color: var(--logo-color);
-    color: '#FFFF';
-    border-color: var(--logo-color);
 }
 
 #navbarSupportedContent {
